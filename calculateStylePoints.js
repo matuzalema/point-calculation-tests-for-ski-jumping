@@ -1,11 +1,11 @@
 const calculateStylePoints = (styleNotes) => {
-	const min = Math.min(...styleNotes);
-	const max = Math.max(...styleNotes);
-	const newNotes = styleNotes.filter(note => note != min && note !=max);
-	const sum = newNotes.reduce(function(a, b){return a + b});
-	return min;
-};
+	const notes = styleNotes;
+	const sortArray = styleNotes.sort();
+	sortArray.shift();
+	sortArray.pop();
 
-// calculateStylePoints([20, 18, 19, 20, 17]);
+	const sum = notes.reduce((a, b) => a + b);
+	return sum;
+}
 
-module.exports = calculateStylePoints;
+module.exports = calculateStylePoints; 

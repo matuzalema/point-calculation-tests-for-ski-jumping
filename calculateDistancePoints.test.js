@@ -12,7 +12,7 @@ describe('calculateDistancePoints', () => {
         });
 
        	it('should return correct distanceTotalPoints form large hill size', () => {
-            const actual = calculateDistancePoints(100, "large", 98);;
+            const actual = calculateDistancePoints(100, "large", 98);
     
             const expected = '63.6';
     

@@ -19,7 +19,6 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
 
 	const distanceTotalPoints = initialPoints + (pointsForDistance()*kPointDistance);
 	return distanceTotalPoints; 
-
 };
 
 module.exports = calculateDistancePoints;
