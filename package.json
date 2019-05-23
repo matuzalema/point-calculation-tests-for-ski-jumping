@@ -1,10 +1,9 @@
 {
   "name": "format-date",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -b index.test.js",
+    "test": "mocha -b calculateStylePoints.test.js",
     "test:watch": "onchange \"./*.js\" -- npm test"
   },
   "keywords": [],
@@ -13,5 +12,14 @@
   "devDependencies": {
     "mocha": "^6.1.4",
     "onchange": "^5.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matuzalema/point-calculation-tests-for-ski-jumping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matuzalema/point-calculation-tests-for-ski-jumping/issues"
+  },
+  "homepage": "https://github.com/matuzalema/point-calculation-tests-for-ski-jumping#readme",
+  "description": ""
 }

@@ -1,6 +1,6 @@
 const calculateDistancePoints = (distance, hillSize, kPoint) => {
 
-	const initialPoints = 60;
+	let initialPoints = 60;
 	if(hillSize === 'mamucia'){
 		initialPoints = 120;
 	}
@@ -17,7 +17,9 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
 		}
 	};
 
-	return initialPoints + pointsForDistance();
+	const distanceTotalPoints = initialPoints + (pointsForDistance()*kPointDistance);
+	return distanceTotalPoints; 
+
 };
 
 module.exports = calculateDistancePoints;
